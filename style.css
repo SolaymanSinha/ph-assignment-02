@@ -176,7 +176,8 @@ main {
 
 .features-2-item-2-container {
     position: absolute;
-    bottom: -7px;
+    bottom: 0px;
+    left: 47%;
     display: inline-block;
     background-color: #ff900c;
     padding: 15px 30px;
@@ -186,6 +187,17 @@ main {
 .features-2-item-2-container h1,
 .features-2-item-2-container p {
     color: white;
+    text-align: center;
+}
+
+.features-2-item-2-container h1 {
+    font-weight: 700;
+    font-size: 65px;
+}
+
+.features-2-item-2-container p {
+    font-weight: 500;
+    font-size: 25px;
 }
 
 /* ***-------------------------------- Responsive Part - Mobile -------------------------------------- */
