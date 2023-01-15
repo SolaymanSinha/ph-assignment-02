@@ -1,11 +1,16 @@
 /* ***------------------------------- Fonts ------------------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+/* ***-------------------- Universal Styles --------------------- */
 * {
     margin: 0;
     padding: 0;
     font-family: "Work Sans", sans-serif;
     color: #131313;
+}
+
+p {
+    color: #727272;
 }
 
 /* ***------------------------------- Header Part ----------------------------------- */
@@ -44,7 +49,8 @@
     text-align: center;
 }
 
-#header-section div h1, .features-h1 {
+#header-section div h1,
+.features-h1 {
     margin-top: 102px;
     margin-bottom: 30px;
     font-weight: 700;
@@ -92,6 +98,10 @@ main {
     gap: 73px;
 }
 
+#features-h1 {
+    text-align: left;
+}
+
 .item-1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -115,6 +125,67 @@ main {
 
 .item-2 p {
     color: #727272;
+}
+
+#features-2 {
+    margin-top: 130px;
+    position: relative;
+}
+
+.features-2-item-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.features-2-subitem-1 h1 {
+    border-left: 5px solid orange;
+    padding-left: 5px;
+    font-weight: 700;
+    font-size: 45px;
+    margin-bottom: 24px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.features-2-subitem-1 p {
+    margin-bottom: 30px;
+}
+
+.box {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.11);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.features-2-subitem-2 {
+    display: flex;
+    align-items: center;
+}
+
+.features-2-subitem-2 img {
+    width: 100%;
+    height: fit-content;
+}
+
+.features-2-item-2 {
+    display: flex;
+    justify-content: center;
+}
+
+.features-2-item-2-container {
+    position: absolute;
+    bottom: -7px;
+    display: inline-block;
+    background-color: #ff900c;
+    padding: 15px 30px;
+    border-radius: 8px;
+}
+
+.features-2-item-2-container h1,
+.features-2-item-2-container p {
+    color: white;
 }
 
 /* ***-------------------------------- Responsive Part - Mobile -------------------------------------- */
@@ -146,6 +217,32 @@ main {
     #header-section button {
         transform: scale(0.8);
     }
+
+    /* ***---------------- Main, Features Part Responsive ------------------ */
+    main {
+        padding: 05px 05px;
+    }
+
+    #features {
+        grid-template-columns: 1fr;
+    }
+
+    .item-1 {
+        grid-template-columns: 1fr;
+    }
+
+    .features-h1 {
+        margin-top: 2px;
+    }
+
+    .explore-btn-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    #features-h1 {
+        text-align: center;
+    }
 }
 
 /* ***--------------------------- Responsive Part - Tablet -------------------------------- */
@@ -164,5 +261,27 @@ main {
 
     #header-section button {
         transform: scale(0.8);
+    }
+
+    /* ***---------------- Main, Features Part Responsive ------------------ */
+    main {
+        padding: 05px 05px;
+    }
+
+    #features {
+        grid-template-columns: 1fr;
+    }
+
+    .features-h1 {
+        margin-top: 2px;
+    }
+
+    .explore-btn-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    #features-h1 {
+        text-align: center;
     }
 }
