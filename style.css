@@ -1,0 +1,78 @@
+/* For Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Work Sans", sans-serif;
+    color: #131313;
+}
+
+#header {
+    background-color: #fff4e7;
+    padding: 50px 228px;
+}
+
+#header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#header nav h1 {
+    font-weight: 700;
+}
+
+#header nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+#header nav ul li {
+    list-style: none;
+    padding: 0 40px;
+    color: #424242;
+}
+
+#header-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header-section div {
+    text-align: center;
+}
+
+#header-section div h1 {
+    margin-top: 102px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+}
+
+#header-section div p {
+    color: #727272;
+    margin-bottom: 33px;
+}
+
+#header-section button {
+    margin-bottom: 33px;
+    padding: 21px 25px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: #ff900c;
+    color: white;
+    font-size: 20px;
+}
+
+#header-section button a {
+    text-decoration: none;
+    color: white;
+}
+
+#header-section img {
+    width: 100%;
+}
