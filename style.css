@@ -1,4 +1,4 @@
-/* For Fonts */
+/* ***------------------------------- Fonts ------------------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
@@ -8,6 +8,7 @@
     color: #131313;
 }
 
+/* ***------------------------------- Header Part ----------------------------------- */
 #header {
     background-color: #fff4e7;
     padding: 50px 228px;
@@ -43,7 +44,7 @@
     text-align: center;
 }
 
-#header-section div h1 {
+#header-section div h1, .features-h1 {
     margin-top: 102px;
     margin-bottom: 30px;
     font-weight: 700;
@@ -54,10 +55,11 @@
 
 #header-section div p {
     color: #727272;
-    margin-bottom: 33px;
 }
 
-#header-section button {
+#header-section button,
+.explore-btn {
+    margin-top: 33px;
     margin-bottom: 33px;
     padding: 21px 25px;
     border-radius: 8px;
@@ -68,7 +70,8 @@
     font-size: 20px;
 }
 
-#header-section button a {
+#header-section button a,
+.explore-btn-a {
     text-decoration: none;
     color: white;
 }
@@ -76,6 +79,42 @@
 #header-section img {
     width: 100%;
     border-radius: 8px;
+}
+
+/* ***------------------------------------ Main, Features Part ---------------------------------------- */
+main {
+    padding: 50px 228px;
+}
+
+#features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 73px;
+}
+
+.item-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.item-1 img {
+    width: 100%;
+}
+
+.item-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item-2 h1 {
+    font-size: 45px;
+    line-height: 53px;
+}
+
+.item-2 p {
+    color: #727272;
 }
 
 /* ***-------------------------------- Responsive Part - Mobile -------------------------------------- */
