@@ -200,6 +200,83 @@ main {
     font-size: 25px;
 }
 
+/* ***------------------------------------ Fact Part ---------------------------------------- */
+.fact {
+    margin-top: 200px;
+}
+
+.fact h1 {
+    font-weight: 700;
+    font-size: 45px;
+    margin-bottom: 24px;
+}
+
+.fact-p {
+    width: 65%;
+}
+
+.fact-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.fact-box {
+    border: 1px solid #ff900e;
+    text-align: center;
+    padding: 45px 36px;
+    border-radius: 8px;
+}
+
+@keyframes dancing {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(2);
+    }
+}
+
+.fact-box:hover .fact-img {
+    animation: dancing 1s linear 0s infinite alternate;
+}
+
+.fact-box:hover {
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+
+/* ***------------------------------------ Sponsors Part ---------------------------------------- */
+#sponsors {
+    text-align: center;
+    margin-top: 180px;
+}
+
+#sponsors h1 {
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 45px;
+}
+
+#sponsors-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+/* ***------------------------------------ Footer/Copyright Part ---------------------------------------- */
+footer {
+    padding: 50px 228px;
+}
+
+#copyright {
+    display: flex;
+    justify-content: center;
+    background-color: #fff4e7;
+    padding: 39px 0px;
+    border-radius: 8px;
+}
+
 /* ***-------------------------------- Responsive Part - Mobile -------------------------------------- */
 @media only screen and (max-width: 576px) {
     #header {
@@ -230,7 +307,7 @@ main {
         transform: scale(0.8);
     }
 
-    /* ***---------------- Main, Features Part Responsive ------------------ */
+    /* ***---------------- Main, Features, Fact, Sponsor Part Responsive ------------------ */
     main {
         padding: 05px 05px;
     }
@@ -253,6 +330,49 @@ main {
     }
 
     #features-h1 {
+        text-align: center;
+    }
+
+    .features-2-item-1 {
+        grid-template-columns: 1fr;
+    }
+
+    .features-2-subitem-2 {
+        order: -1;
+    }
+
+    .features-2-item-2-container {
+        position: static;
+        transform: scale(0.7);
+    }
+
+    .fact-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .fact-p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .fact h1 {
+        text-align: center;
+    }
+
+    #sponsors-container {
+        flex-direction: column;
+        gap: 50px;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    #sponsors p {
+        margin-bottom: 20px;
+    }
+
+    footer {
+        padding: 05px 05px;
         text-align: center;
     }
 }
@@ -296,4 +416,8 @@ main {
     #features-h1 {
         text-align: center;
     }
+}
+
+.hide {
+    display: none;
 }
